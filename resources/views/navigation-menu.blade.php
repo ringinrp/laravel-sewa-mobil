@@ -15,11 +15,14 @@
                     <x-nav-link href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('admin.items.index') }}" :active="request()->routeIs('admin.items.index')">
+                        {{ __('Item') }}
+                    </x-nav-link>
                     <x-nav-link href="{{ route('admin.brands.index') }}" :active="request()->routeIs('admin.brands.index')">
-                        {{ __('Brands') }}
+                        {{ __('Brand') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('admin.types.index') }}" :active="request()->routeIs('admin.types.index')">
-                        {{ __('Types') }}
+                        {{ __('Type') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -159,11 +162,14 @@
             <x-responsive-nav-link href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('admin.items.index') }}" :active="request()->routeIs('admin.items.index')">
+                {{ __('Item') }}
+            </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('admin.brands.index') }}" :active="request()->routeIs('admin.brands.index')">
-                {{ __('Brands') }}
+                {{ __('Brand') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('admin.types.index') }}" :active="request()->routeIs('admin.types.index')">
-                {{ __('Types') }}
+                {{ __('Type') }}
             </x-responsive-nav-link>
         </div>
 
